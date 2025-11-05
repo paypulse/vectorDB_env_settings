@@ -2,14 +2,10 @@ version: '3.9'
 
 services: 
   chromadb:
-    image: ghcr.io/chroma-core/chroma:latest
+    build: .
     container_name: chromadb
     ports: 
       - "8000:8000"
     volumes:
       - ./data:/app/data
-    environment:
-      - IS_PERSISTENT=TRUE
-      - CHROMA_DB_IMPL=duckdb+parquet
-      - ANONYMIZED_TELEMETRY=False
     restart: unless-stopped 
