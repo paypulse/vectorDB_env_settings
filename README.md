@@ -24,6 +24,8 @@
 ### 관련 링크 
 https://blog.naver.com/ilifo_book 
 
+https://www.ncloud-forums.com/topic/277/
+
 
 ### semi project 
 # Vector DB Control Plane (Local-first)
