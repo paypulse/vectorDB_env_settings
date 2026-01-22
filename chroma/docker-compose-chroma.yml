@@ -2,10 +2,12 @@ version: '3.9'
 
 services: 
   chromadb:
-    build: .
+    image:  chromadb/chroma:latest
     container_name: chromadb
     ports: 
       - "8000:8000"
     volumes:
       - ./data:/app/data
+    environment:
+      - PERSIST_DIRECOTRY=/chroma/chroma
     restart: unless-stopped 
