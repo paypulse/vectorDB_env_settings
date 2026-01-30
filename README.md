@@ -226,3 +226,8 @@ Cloud Vector DB 연동은 **부차적인 단계**이며,
 
 
 
+---
+# docker-compose 실행 
+```
+    docker-compose -f docker-compose-***.yml up -d 
+```
